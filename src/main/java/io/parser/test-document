@@ -1,0 +1,13 @@
+theory
+
+functions
+not: 1;
+and: 2;
+or: 2;
+
+axioms
+hallo: tt \/ ff |- x;
+welt: tt /\ ff |- x;
+
+theorems
+theorem: (x -> y) /\ (y -> x) |- x <-> y

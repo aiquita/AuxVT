@@ -1,0 +1,22 @@
+theory
+
+functions
+not: 1;
+and: 2;
+or: 2;
+f: 1;
+g: 1;
+
+predicates
+tt: 0;
+ff: 0;
+x: 0;
+y: 0;
+
+axioms
+hallo: tt \/ ff |- x;
+welt: tt /\ ff |- x;
+
+theorems
+theorem: (x -> y) /\ (y -> x) |- x <-> y;
+zwei: forall z. f(z) = g(z) |- exists z. f(z) = g(z);
